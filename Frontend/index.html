@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>MTN MoMo Transaction Dashboard</h1>
+
+    <div class="filter-container">
+        <label for="category">Filter by Category:</label>
+        <select id="category">
+            <option value="All">All</option>
+            <option value="Incoming Money">Incoming Money</option>
+            <option value="Payments to Code Holders">Payments to Code Holders</option>
+            <option value="Transfers to Mobile Numbers">Transfers to Mobile Numbers</option>
+            <option value="Bank Deposits">Bank Deposits</option>
+            <option value="Airtime Bill Payments">Airtime Bill Payments</option>
+            <option value="Cash Power Bill Payments">Cash Power Bill Payments</option>
+            <option value="Transactions Initiated by Third Parties">Transactions Initiated by Third Parties</option>
+            <option value="Withdrawals from Agents">Withdrawals from Agents</option>
+            <option value="Bank Transfers">Bank Transfers</option>
+            <option value="Internet and Voice Bundle Purchases">Internet and Voice Bundle Purchases</option>
+        </select>
+    </div>
+
+    <canvas id="transactionsChart"></canvas>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Amount (RWF)</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+        <tbody id="transactionTable">
+            <!-- Transactions will be inserted here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
