@@ -14,28 +14,27 @@ Step 2: Download and Open the Project
 1. Download the project ZIP file.
 2. Extract it to a folder on your computer.
 3. Open Terminal or Command Prompt and move into the project folder:
- cd path/to/project
 
 
 Step 3: Set Up the Database
 The system will store data in a database. To create it:
 1. Move into the Backend folder:
- cd Backend
+ (cd Backend)
 2. Run the script to set up the database:
- python database.py
+ (python database.py)
 
 
 Step 4: Process and Insert Data
 Now, you will extract and store transaction data:
 1. Extract data from SMS messages:
- python process_sms.py
+ (python process_sms.py)
 2. then Insert the extracted data into the database:
- python data_insertion.py
+ (python data_insertion.py)
 
 
 Step 5: Start the Backend API
 The backend handles data and sends it to the frontend. To start it:
- python api.py
+ (python api.py)
 If it is successful, the API will run at: http://127.0.0.1:5000/transactions
 
 
