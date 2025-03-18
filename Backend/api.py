@@ -1,7 +1,9 @@
 from flask import Flask, jsonify
+from flask_cors import CORS  # Import CORS
 import sqlite3
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for frontend requests
 
 DB_NAME = "../Data/sms_transactions.db"
 
